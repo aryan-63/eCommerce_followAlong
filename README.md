@@ -106,3 +106,7 @@ In the next milestone, we’ll add features like filtering and sorting. Keep up 
 ### Submission:
 - Push your code to GitHub and ensure the repository is public.
 - Update README with your progress and share the link.
+
+
+### Milestone 9: 
+Created an form to input all the details of product and it will be saved in database and will be displayed on products home page.
