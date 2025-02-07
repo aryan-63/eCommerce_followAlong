@@ -112,3 +112,8 @@ In the next milestone, we’ll add features like filtering and sorting. Keep up 
 Created an form to input all the details of product and it will be saved in database and will be displayed on products home page.
 
 ### Milestone 10:
+
+
+### Milestone 12:
+Created an endpoint that will send data by filtering with my mail and send data from mongodb.
+It will receive data at frontend and will display that data dynamically using product card created earlier.
