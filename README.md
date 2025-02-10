@@ -111,9 +111,26 @@ In the next milestone, we’ll add features like filtering and sorting. Keep up 
 ### Milestone 9: 
 Created an form to input all the details of product and it will be saved in database and will be displayed on products home page.
 
-### Milestone 10:
+### Milestone 10: Product Schema & Endpoint Creation
 
+In this milestone, I created a Mongoose schema to define the structure for storing product data in MongoDB. The schema includes fields like name, description, price, and image URL, with proper validation to ensure data integrity (e.g., required fields, correct data types).
 
-### Milestone 12:
-Created an endpoint that will send data by filtering with my mail and send data from mongodb.
-It will receive data at frontend and will display that data dynamically using product card created earlier.
+I also built a POST endpoint that receives product details, validates the input data, and stores it in the database. This ensures that only valid product information is saved, maintaining a clean and reliable database.
+
+Additionally, I explored optional features like creating admin roles for restricted access to product uploads. This milestone strengthens the backend process of handling product data, making it ready for display on the frontend in future milestones.
+
+### Milestone 11 🌟
+
+In this milestone, we learned how to display products dynamically on the home page using data stored in MongoDB. We built an endpoint to fetch all the products and a frontend function to display them using a product card component.
+
+### Milestone 12 - My Products Page
+
+In this milestone, we will build a "My Products" page that will display all the products added by a specific user. We will write an endpoint to filter products based on the user's email and send that data to the frontend. The data will be fetched dynamically and displayed using the Product Card component created earlier.
+
+### Milestone 13 - Updating the product
+
+This Express.js route updates a product in a MongoDB database, handling file uploads using multer. It validates input data, updates product details (name, description, category, tags, price, stock, email), and modifies images if new ones are uploaded. Errors are handled with appropriate status codes, ensuring robust error management and smooth database updates.
+
+### Milestone 14 - Delete the product
+
+This e-commerce application is built with Node.js, Express, MongoDB, and React, providing full-stack functionality for product management. It includes RESTful APIs for adding, updating, and deleting products. The /delete-product/:id endpoint allows secure product removal. Error handling ensures reliability. Ideal for scalable and dynamic online stores.
