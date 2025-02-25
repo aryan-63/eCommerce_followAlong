@@ -178,3 +178,17 @@ Created an end point to receive the product details and store in database.
    -Ensure Secure Data Handling while fetching and sending user information.
 
 
+### Milestone 21- Address form
+Created a frontend form to collect address details.
+
+Captured Country, City, Address1, Address2, Zip Code, Address Type.
+
+Implement form validation and dropdowns for selection.
+
+📌 Implementation
+
+Create AddressForm.jsx component.
+
+Use controlled inputs with validation.
+
+Style and structure for a user-friendly UI.
