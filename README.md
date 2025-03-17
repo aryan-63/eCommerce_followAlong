@@ -192,3 +192,56 @@ Create AddressForm.jsx component.
 Use controlled inputs with validation.
 
 Style and structure for a user-friendly UI.
+
+### Milestone 22: Store Address in User Profile
+Added a new POST /api/user/address endpoint.
+
+Stores user address in the database under the User model.
+
+Validates user existence before saving the address.
+
+Handles errors like missing data, invalid user, and server issues.
+
+### Milestone 23 🎯
+In this milestone:
+
+✅ Add a "Place Order" button inside the cart.
+
+✅ Create a "Select Address" page to display all saved addresses and allow users to choose a delivery address.
+
+✅ Write a Mongoose schema to store order details.
+
+### Milestone 24 🎯
+In this milestone:
+
+✅ Create an Order Confirmation page.
+
+### Milestone 25 📝
+An API endpoint was created to receive product details, user email, and address.
+
+The user ID is retrieved using the provided email.
+
+Separate orders are stored for each product with the same address in the MongoDB orders collection.
+
+The implementation follows the existing order schema and ensures data integrity.
+
+### Milestone 26 📝
+An API endpoint was created to receive the user's email.
+
+The user ID is retrieved using the provided email.
+
+Using the retrieved _id, all orders associated with the user are fetched.
+
+The response contains all orders belonging to the user.
+
+### Milestone 27: My Orders Page
+
+Welcome to Milestone 27! 
+
+In this milestone, we focused on creating the frontend page that displays all user orders.
+
+### Milestone 28: Cancel Order Feature
+
+Welcome to Milestone 28!
+
+ In this milestone, we focused on adding a cancel order feature to the `my-orders` page and creating a backend endpoint for handling order cancellations.
