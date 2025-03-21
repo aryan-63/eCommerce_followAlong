@@ -242,11 +242,13 @@ In this milestone, we focused on creating the frontend page that displays all us
 
 ### Milestone 28: Cancel Order Feature
 
-Welcome to Milestone 28!
+In this milestone, we focused on adding a cancel order feature to the my-orders page and creating a backend endpoint for handling order cancellations.
+
+### Welcome to Milestone 28!
 
  In this milestone, we focused on adding a cancel order feature to the `my-orders` page and creating a backend endpoint for handling order cancellations.
 
- ### Milestone 29📝
+### Milestone 29📝
 Created a PayPal Developer Account and logged into the PayPal Developer Dashboard.
 
 Located the Client ID in the sandbox accounts and saved it in the project.
@@ -260,3 +262,8 @@ Online Payment
 Implemented radio buttons to toggle between COD and Online Payment.
 
 Set up logic so that PayPal buttons only appear when the Online Payment option is selected.
+
+### Milestone 30📝
+Implemented online payment using PayPal API using the client key you created earlier.
+
+Downloaded NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc.
