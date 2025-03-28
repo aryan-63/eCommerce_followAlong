@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const Order = require('../model/order'); // Adjust path as needed
 const User = require('../model/user');   // Adjust path as needed
+const { isAuthenticatedUser } = require('../middleware/auth');
 
-router.post('/place-order', async (req, res) => {
+router.post('/place-order', isAuthenticatedUser, async (req, res) => {
     try {
         const { email, orderItems, shippingAddress } = req.body;
         // Validate request data
@@ -35,7 +36,7 @@ router.post('/place-order', async (req, res) => {
         });
         const orders = await Promise.all(orderPromises);
         user.cart = [];
-         await user.save();
+        await user.save();
         
         res.status(201).json({ message: 'Orders placed and cart cleared successfully.', orders });
     } catch (error) {
@@ -44,7 +45,7 @@ router.post('/place-order', async (req, res) => {
     }
 });
 
-router.get('/my-orders', async (req, res) => {
+router.get('/my-orders', isAuthenticatedUser, async (req, res) => {
     try {
         const { email } = req.query;
 
@@ -68,7 +69,8 @@ router.get('/my-orders', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-router.get('/myorders', async (req, res) => {
+
+router.get('/myorders',  isAuthenticatedUser, async (req, res) => {
     try {
         // Retrieve email from query parameters
         const { email } = req.query;
@@ -91,7 +93,7 @@ router.get('/myorders', async (req, res) => {
     }
 });
 
-router.patch('/cancel-order/:orderId', async (req, res) => {
+router.patch('/cancel-order/:orderId',  isAuthenticatedUser, async (req, res) => {
     try {
         const { orderId } = req.params;
         console.log("fff")
